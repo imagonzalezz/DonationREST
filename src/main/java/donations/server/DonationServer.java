@@ -34,4 +34,10 @@ public class DonationServer {
 		DonationInfo donationInfo = donationCollector.getDonationInfo();
 		return Response.ok(donationInfo).build();
 	}
+
+	@GET
+	@Path("/sayGoodbye")
+	public Response sayGoodBye() {
+		return Response.ok("Goodbye!").build();
+	}
 }
